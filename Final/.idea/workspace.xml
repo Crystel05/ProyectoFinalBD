@@ -3,8 +3,38 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="11402faf-6dc0-4fd0-a940-9914133fc72a" name="Default Changelist" comment="" />
+    <list default="true" id="11402faf-6dc0-4fd0-a940-9914133fc72a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VIEW/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VIEW/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/VIEW/Inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VIEW/Inicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,32 +47,48 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="E:\Programas\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1nOvYqJyDt2P1rN3fIipSX67ewV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GIT/Proyecto-Java-Vaadi-para-DB/proyecto1.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Proyecto-Java-Vaadi-para-DB/proyecto1.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ArchivosTec\Cuartosemestre\Bases\ProyectoFinalBD\Final" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,6 +129,7 @@
       <updated>1611274003470</updated>
       <workItem from="1611274004719" duration="314000" />
       <workItem from="1611341443907" duration="5945000" />
+      <workItem from="1611867083175" duration="2417000" />
     </task>
     <servers />
   </component>
@@ -110,35 +157,60 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611342614970">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="274" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611869438366">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611342614970" />
+    <state x="274" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611869438366" />
     <state x="527" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1611343100288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="527" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611343100288" />
-    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1611342992174">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="620" y="136" key="FileChooserDialogImpl" timestamp="1611867482031">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611342992174" />
-    <state width="1477" height="195" key="GridCell.Tab.0.bottom" timestamp="1611366785037">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="620" y="136" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611867482031" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1611869510019">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1477" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611366785037" />
-    <state width="1477" height="195" key="GridCell.Tab.0.center" timestamp="1611366785037">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611869510019" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1611869510018">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1477" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611366785037" />
-    <state width="1477" height="195" key="GridCell.Tab.0.left" timestamp="1611366785037">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611869510018" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1611869510018">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1477" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611366785037" />
-    <state width="1477" height="195" key="GridCell.Tab.0.right" timestamp="1611366785037">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611869510018" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1611869510018">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1477" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611366785037" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611869510018" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1611867125775">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611867125775" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1611869475141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611869475141" />
     <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1611343834024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

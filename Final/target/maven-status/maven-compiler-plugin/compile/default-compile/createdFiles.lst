@@ -1,3 +1,4 @@
 VIEW\MyUI.class
 VIEW\MyUI$MyUIServlet.class
+CONTROLLER\ControllerConexion.class
 VIEW\Inicio.class

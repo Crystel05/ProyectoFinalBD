@@ -5,6 +5,7 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.server.FileResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
+import CONTROLLER.ControllerConexion;
 
 import java.io.File;
 
@@ -17,6 +18,8 @@ public class Inicio extends AbsoluteLayout implements View {
     }
 
     public void ventana(){
+
+        ControllerConexion conexionPrueba = ControllerConexion.getInstance();
         HorizontalLayout fondoFinal = new HorizontalLayout();
         fondoFinal.setSizeFull();
 
