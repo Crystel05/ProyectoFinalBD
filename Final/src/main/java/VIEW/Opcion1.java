@@ -1,5 +1,6 @@
 package VIEW;
 
+import CONTROLLER.ControllerUi;
 import MODELO.MejorCorredor;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.Navigator;
@@ -10,8 +11,11 @@ import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class Opcion1 extends AbsoluteLayout implements View {
+
+    ControllerUi controller = ControllerUi.getInstance();
 
     public Opcion1() {
 
@@ -42,12 +46,16 @@ public class Opcion1 extends AbsoluteLayout implements View {
         Label mejor2 = new Label("EN EL GIRO");
         mejor2.addStyleName(ValoTheme.LABEL_H2);
 
+        ArrayList<MejorCorredor> mejoresC = controller.mejoresGiro(controller.getAnno(), controller.getNombreGiro());
+//        Notification.show(String.valueOf(controller.getAnno()) + " " + controller.getNombreGiro());
+
         Grid<MejorCorredor> mejoresGiro1 = new Grid(MejorCorredor.class);
         mejoresGiro1.setHeight("228px");
         mejoresGiro1.removeColumn("cantPuntos");
         mejoresGiro1.getColumn("posicionFinal").setCaption("POSICIÓN");
         mejoresGiro1.getColumn("nombre").setCaption("NOMBRE");
         mejoresGiro1.getColumn("tiempoAcumulado").setCaption("TIEMPO ACUMULADO");
+        mejoresGiro1.setItems(mejoresC.subList(0, 5));
 
         Grid<MejorCorredor> mejoresGiro2 = new Grid<>(MejorCorredor.class);
         mejoresGiro2.setHeight("228px");
@@ -55,6 +63,7 @@ public class Opcion1 extends AbsoluteLayout implements View {
         mejoresGiro2.getColumn("nombre").setCaption("NOMBRE");
         mejoresGiro2.getColumn("tiempoAcumulado").setCaption("TIEMPO ACUMULADO");
         mejoresGiro2.removeColumn("cantPuntos");
+        mejoresGiro2.setItems(mejoresC.subList(5,10));
 
         Button atras = new Button();
         atras.addStyleName(ValoTheme.BUTTON_BORDERLESS_COLORED);

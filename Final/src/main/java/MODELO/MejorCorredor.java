@@ -50,4 +50,8 @@ public class MejorCorredor {
     public void setTiempoAcumulado(float tiempoAcumulado) {
         this.tiempoAcumulado = tiempoAcumulado;
     }
+
+    public void imprimir(){
+        System.out.println(getNombre() + " " + getPosicionFinal() + " " + getCantPuntos());
+    }
 }
