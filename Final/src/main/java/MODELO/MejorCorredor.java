@@ -4,19 +4,20 @@ public class MejorCorredor {
 
     private int posicionFinal;
     private String nombre;
-    private float tiempoAcumulado;
     private int cantPuntos;
-
-    public MejorCorredor(int posicionFinal, String nombre, float tiempoAcumulado) {
-        this.posicionFinal = posicionFinal;
-        this.nombre = nombre;
-        this.tiempoAcumulado = tiempoAcumulado;
-    }
+    private String tiempo;
 
     public MejorCorredor(int posicionFinal, String nombre, int cantPuntos) {
         this.posicionFinal = posicionFinal;
         this.nombre = nombre;
         this.cantPuntos = cantPuntos;
+    }
+
+    public MejorCorredor(int posicionFinal, String nombre, String tiempo) {
+        this.posicionFinal = posicionFinal;
+        this.nombre = nombre;
+        this.cantPuntos = cantPuntos;
+        this.tiempo = tiempo;
     }
 
     public int getCantPuntos() {
@@ -43,15 +44,15 @@ public class MejorCorredor {
         this.nombre = nombre;
     }
 
-    public float getTiempoAcumulado() {
-        return tiempoAcumulado;
-    }
-
-    public void setTiempoAcumulado(float tiempoAcumulado) {
-        this.tiempoAcumulado = tiempoAcumulado;
-    }
-
     public void imprimir(){
         System.out.println(getNombre() + " " + getPosicionFinal() + " " + getCantPuntos());
+    }
+
+    public String getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiempo(String tiempo) {
+        this.tiempo = tiempo;
     }
 }

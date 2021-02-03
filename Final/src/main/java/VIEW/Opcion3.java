@@ -1,5 +1,6 @@
 package VIEW;
 
+import CONTROLLER.ControllerUi;
 import MODELO.MejorCorredor;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.Navigator;
@@ -10,8 +11,11 @@ import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class Opcion3 extends AbsoluteLayout implements View {
+
+    private ControllerUi controller = ControllerUi.getInstance();
 
     public Opcion3() {
 
@@ -42,19 +46,23 @@ public class Opcion3 extends AbsoluteLayout implements View {
         Label datos2 = new Label("CORREDORES MONTAÑA");
         datos2.addStyleName(ValoTheme.LABEL_H2);
 
+        ArrayList<MejorCorredor> corredors = controller.mejoresCorredoresMontana(controller.getAnno(), controller.getNombreGiro());
+
         Grid<MejorCorredor> mejoresCorredores1 = new Grid<>(MejorCorredor.class);
-        mejoresCorredores1.removeColumn("tiempoAcumulado");
+        mejoresCorredores1.removeColumn("tiempo");
         mejoresCorredores1.getColumn("posicionFinal").setCaption("POSICIÓN");
         mejoresCorredores1.getColumn("nombre").setCaption("NOMBRE");
         mejoresCorredores1.getColumn("cantPuntos").setCaption("CANTIDAD PUNTOS");
         mejoresCorredores1.setHeight("228px");
+        mejoresCorredores1.setItems(corredors.subList(0,5));
 
         Grid<MejorCorredor> mejoresCorredores2 = new Grid<>(MejorCorredor.class);
-        mejoresCorredores2.removeColumn("tiempoAcumulado");
+        mejoresCorredores2.removeColumn("tiempo");
         mejoresCorredores2.getColumn("posicionFinal").setCaption("POSICIÓN");
         mejoresCorredores2.getColumn("nombre").setCaption("NOMBRE");
         mejoresCorredores2.getColumn("cantPuntos").setCaption("CANTIDAD PUNTOS");
         mejoresCorredores2.setHeight("228px");
+        mejoresCorredores2.setItems(corredors.subList(5,10));
 
         Button atras = new Button();
         atras.addStyleName(ValoTheme.BUTTON_BORDERLESS_COLORED);

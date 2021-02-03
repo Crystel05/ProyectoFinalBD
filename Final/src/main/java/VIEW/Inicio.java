@@ -15,6 +15,7 @@ import java.util.NoSuchElementException;
 public class Inicio extends AbsoluteLayout implements View {
 
     private ControllerUi controller = ControllerUi.getInstance();
+    private boolean presionado = false;
 
     public Inicio() {
 
@@ -82,6 +83,7 @@ public class Inicio extends AbsoluteLayout implements View {
                 controller.setAnno(annoGiro.getSelectedItem().get());
                 controller.setNombreGiro(nombreGiro.getSelectedItem().get());
                 Notification.show("Ahora puede acceder a las consultas", Notification.Type.TRAY_NOTIFICATION);
+                presionado = true;
             }
             else{
                 Notification.show("No seleccionó el año o el nombre del giro", Notification.Type.WARNING_MESSAGE);
@@ -94,7 +96,7 @@ public class Inicio extends AbsoluteLayout implements View {
         opcion1.setHeight("80px");
         opcion1.setWidth("300px");
         opcion1.addClickListener(e->{
-            if((annoGiro.getSelectedItem().isPresent() && nombreGiro.getSelectedItem().isPresent()) || (controller.getAnno() != 0 && controller.getNombreGiro() != null)) {
+            if(presionado) {
                 Navigator navigator = new Navigator(UI.getCurrent(), this);
                 navigator.addView("Opcion1", Opcion1.class);
                 navigator.navigateTo("Opcion1");
@@ -109,7 +111,7 @@ public class Inicio extends AbsoluteLayout implements View {
         opcion2.setHeight("80px");
         opcion2.setWidth("300px");
         opcion2.addClickListener(e->{
-            if((annoGiro.getSelectedItem().isPresent() && nombreGiro.getSelectedItem().isPresent()) || (controller.getAnno() != 0 && controller.getNombreGiro() != null)) {
+            if(presionado) {
                 Navigator navigator = new Navigator(UI.getCurrent(), this);
                 navigator.addView("Opcion2", Opcion2.class);
                 navigator.navigateTo("Opcion2");
@@ -124,7 +126,7 @@ public class Inicio extends AbsoluteLayout implements View {
         opcion3.setHeight("80px");
         opcion3.setWidth("300px");
         opcion3.addClickListener(e->{
-            if((annoGiro.getSelectedItem().isPresent() && nombreGiro.getSelectedItem().isPresent()) || (controller.getAnno() != 0 && controller.getNombreGiro() != null)) {
+            if(presionado) {
                 Navigator navigator = new Navigator(UI.getCurrent(), this);
                 navigator.addView("Opcion3", Opcion3.class);
                 navigator.navigateTo("Opcion3");
@@ -139,7 +141,7 @@ public class Inicio extends AbsoluteLayout implements View {
         opcion4.setHeight("80px");
         opcion4.setWidth("300px");
         opcion4.addClickListener(e->{
-            if((annoGiro.getSelectedItem().isPresent() && nombreGiro.getSelectedItem().isPresent()) || (controller.getAnno() != 0 && controller.getNombreGiro() != null)) {
+            if(presionado) {
                 Navigator navigator = new Navigator(UI.getCurrent(), this);
                 navigator.addView("Opcion4", Opcion4.class);
                 navigator.navigateTo("Opcion4");

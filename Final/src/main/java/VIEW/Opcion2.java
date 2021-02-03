@@ -49,7 +49,7 @@ public class Opcion2 extends AbsoluteLayout implements View {
         ArrayList<MejorCorredor> corredors = controller.corredoresMasRegulares(controller.getAnno(), controller.getNombreGiro());
 
         Grid<MejorCorredor> mejoresCorredores1 = new Grid<>(MejorCorredor.class);
-        mejoresCorredores1.removeColumn("tiempoAcumulado");
+        mejoresCorredores1.removeColumn("tiempo");
         mejoresCorredores1.getColumn("posicionFinal").setCaption("POSICIÓN");
         mejoresCorredores1.getColumn("nombre").setCaption("NOMBRE");
         mejoresCorredores1.getColumn("cantPuntos").setCaption("CANTIDAD PUNTOS");
@@ -57,7 +57,7 @@ public class Opcion2 extends AbsoluteLayout implements View {
         mejoresCorredores1.setItems(corredors.subList(0,5));
 
         Grid<MejorCorredor> mejoresCorredores2 = new Grid<>(MejorCorredor.class);
-        mejoresCorredores2.removeColumn("tiempoAcumulado");
+        mejoresCorredores2.removeColumn("tiempo");
         mejoresCorredores2.getColumn("posicionFinal").setCaption("POSICIÓN");
         mejoresCorredores2.getColumn("nombre").setCaption("NOMBRE");
         mejoresCorredores2.getColumn("cantPuntos").setCaption("CANTIDAD PUNTOS");

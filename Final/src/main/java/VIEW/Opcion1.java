@@ -47,22 +47,25 @@ public class Opcion1 extends AbsoluteLayout implements View {
         mejor2.addStyleName(ValoTheme.LABEL_H2);
 
         ArrayList<MejorCorredor> mejoresC = controller.mejoresGiro(controller.getAnno(), controller.getNombreGiro());
-//        Notification.show(String.valueOf(controller.getAnno()) + " " + controller.getNombreGiro());
 
         Grid<MejorCorredor> mejoresGiro1 = new Grid(MejorCorredor.class);
         mejoresGiro1.setHeight("228px");
+        mejoresGiro1.setWidth("600px");
+        mejoresGiro1.setColumnOrder("posicionFinal", "nombre", "tiempo");
         mejoresGiro1.removeColumn("cantPuntos");
         mejoresGiro1.getColumn("posicionFinal").setCaption("POSICIÓN");
         mejoresGiro1.getColumn("nombre").setCaption("NOMBRE");
-        mejoresGiro1.getColumn("tiempoAcumulado").setCaption("TIEMPO ACUMULADO");
+        mejoresGiro1.getColumn("tiempo").setCaption("TIEMPO");
         mejoresGiro1.setItems(mejoresC.subList(0, 5));
 
         Grid<MejorCorredor> mejoresGiro2 = new Grid<>(MejorCorredor.class);
         mejoresGiro2.setHeight("228px");
+        mejoresGiro2.setWidth("600px");
+        mejoresGiro2.setColumnOrder("posicionFinal", "nombre", "tiempo");
         mejoresGiro2.getColumn("posicionFinal").setCaption("POSICIÓN");
         mejoresGiro2.getColumn("nombre").setCaption("NOMBRE");
-        mejoresGiro2.getColumn("tiempoAcumulado").setCaption("TIEMPO ACUMULADO");
         mejoresGiro2.removeColumn("cantPuntos");
+        mejoresGiro2.getColumn("tiempo").setCaption("TIEMPO");
         mejoresGiro2.setItems(mejoresC.subList(5,10));
 
         Button atras = new Button();
@@ -76,8 +79,8 @@ public class Opcion1 extends AbsoluteLayout implements View {
         });
 
 
-        mejoresCorredoresGiro.addComponent(mejoresGiro1, "top: 250px; left: 150px");
-        mejoresCorredoresGiro.addComponent(mejoresGiro2, "top: 250px; right: 150px");
+        mejoresCorredoresGiro.addComponent(mejoresGiro1, "top: 250px; left: 100px");
+        mejoresCorredoresGiro.addComponent(mejoresGiro2, "top: 250px; right: 100px");
         mejoresCorredoresGiro.addComponent(fondoMejoresGiro);
         mejoresCorredoresGiro.addComponent(mejor, "top: 25px; left: 650px");
         mejoresCorredoresGiro.addComponent(mejor2, "top: 50px; left: 720px");
